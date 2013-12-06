@@ -1,8 +1,17 @@
-class Fixnum
-	alias :add_this_number_to_the_other_number :+
+# simple palindrome counter from an array. 
+
+list1 = ["ablewasiereisawelba", "hellolleh", "shippihs", "newthings", 10001]
+
+# if we add numbers, we need to cast them to string, so 
+
+counter_p = 0
+for i in list1
+	if i.to_s == i.to_s.reverse()
+		puts "#{i} is a palindrome"
+		counter_p += 1
+	else
+		puts "#{i} is not a palindrome"
+	end
 end
 
-puts 2 + 3
-puts 2.+(4)
-
-puts 3.add_this_number_to_the_other_number(7)
+puts "There are #{counter_p} palindromes in the list."

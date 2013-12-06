@@ -1,27 +1,4 @@
 #example of inheritance: 
-=begin
-
-class Cat
-	attr_accessor :name, :age, :gender, :color
-end
-
-class Dog
-	attr_accessor :name, :age, :gender, :color
-end 
-
-class Monkey
-	attr_accessor :name, :age, :gender, :color
-end 
-
-class Snake
-	attr_accessor :name, :age, :gender, :color
-end 
-
-=end
-
-# inheritance allows diff classes to relate to noe anohter and group 
-# concepts by their similarities. 
-
 
 class Pet
 	attr_accessor :name, :age, :gender, :color
@@ -44,6 +21,7 @@ class Dog < Pet
 end
 
 class Monkey < Pet
+	alias :hu_monkey :get_hungry
 end
 
 class Snake < Pet
@@ -72,3 +50,29 @@ snaky.get_hungry
 tommy.get_barking
 
 tommy.hungr
+
+mon = Monkey.new
+mon.hu_monkey
+
+=begin
+
+class Cat
+	attr_accessor :name, :age, :gender, :color
+end
+
+class Dog
+	attr_accessor :name, :age, :gender, :color
+end 
+
+class Monkey
+	attr_accessor :name, :age, :gender, :color
+end 
+
+class Snake
+	attr_accessor :name, :age, :gender, :color
+end 
+
+=end
+
+# inheritance allows diff classes to relate to noe anohter and group 
+# concepts by their similarities. 
