@@ -25,6 +25,10 @@ end
 
 class Pet
 	attr_accessor :name, :age, :gender, :color
+
+	def get_hungry
+		puts "I'm hungry!!! Feed Me"
+	end
 end
 
 class Cat < Pet
@@ -47,7 +51,7 @@ class Snake < Pet
 		puts "watch the snake move . . . . . . "
 		7.times do 
 			print "-----> "
-			sleep 0.5
+			sleep (rand(5)) # replaced 0.5 with rand(5)
 		end
 		puts ' '
 	end
@@ -60,5 +64,7 @@ tommy.age = 12
 
 snaky = Snake.new
 snaky.crawl
+
+snaky.get_hungry
 
 tommy.get_barking
