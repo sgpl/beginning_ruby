@@ -29,6 +29,8 @@ class Pet
 	def get_hungry
 		puts "I'm hungry!!! Feed Me"
 	end
+
+	alias :hungr :get_hungry
 end
 
 class Cat < Pet
@@ -68,3 +70,5 @@ snaky.crawl
 snaky.get_hungry
 
 tommy.get_barking
+
+tommy.hungr
