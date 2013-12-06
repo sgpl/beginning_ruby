@@ -3,7 +3,7 @@ puts "x" < "y" # returns boolean
 # ^ characters are stored as numbers inside computer's memory. 
 
 puts ?x # returns numbers that represents x
-puts ?A
+puts ?A # doesn't currently work
 num1 = ?A
 
 puts 120.chr
