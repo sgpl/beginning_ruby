@@ -1,30 +1,6 @@
-puts "x" > "y" # returns boolean
-puts "x" < "y" # returns boolean
-# ^ characters are stored as numbers inside computer's memory. 
+"Hello World".scan(/./) { |letter| print letter; sleep(0.5) }
 
-puts ?x # returns numbers that represents x
-puts ?A
-num1 = ?A
-
-puts 120.chr
-puts num1.chr
-
-## read up more about this on: 
-
-# http://en.wikipedia.org/ wiki/ASCII.
-
-# string literals, etc 
-
-xx = %q{
-this is a multiline
-string literal
-}
-
-yy = <<END_OF_STRING_LITERAL
-this is a multiline
-string literal
-END_OF_STRING_LITERAL
-
-puts "x" * 10
+varr = "Sed sit amet odio sit amet sapien tempor lobortis in quis mauris. Mauris lobortis mauris congue neque adipiscing in varius purus rhoncus. Morbi et lectus a urna pellentesque adipiscing ut sed metus. Aenean malesuada scelerisque interdum. Proin quis dictum turpis. Aliquam erat volutpat. Aliquam vitae ante non lorem imperdiet semper id sollicitudin magna. Nam semper ultricies suscipit. Nulla venenatis consequat dapibus. Curabitur non eros neque, vel feugiat ipsum."
 
 
+varr.scan(/................./) { |match| puts match  }

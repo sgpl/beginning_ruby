@@ -1,3 +1,16 @@
-December 6, 2013: 
-	- finished chapter 1
-	- 
+---------------------------
+---------------------------
+---------------------------
+---------------------------
+chapter 3: 
+	work files in c3
+---------------------------
+chapter 2: 
+	work files in c2
+---------------------------
+chapter 1: 
+
+- print: all lines of code in ruby are made up of expressions that return things. however print displays data to screen rather than return any value so we get => nil
+---------------------------
+
+[December 6, 2013: started book. ]
