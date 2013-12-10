@@ -10,7 +10,7 @@ for i in list1
 		counter_p += 1
 	else
 		puts "#{i} is not a palindrome"
-	end
+	end	
 end
 
 puts "There are #{counter_p} palindromes in the list."
@@ -19,3 +19,4 @@ puts "There are #{counter_p} palindromes in the list."
 
 puts "Percentage of palindromes in the list provided is #{(counter_p.to_f/list1.length)*100} % "
 
+# list1.each {|n| print n; sleep 0.5}
