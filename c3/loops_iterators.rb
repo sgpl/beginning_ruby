@@ -53,4 +53,9 @@ end
 # it returns a boolean
 
 # can also test for equality: puts "###" if age == 23
-
+xx = 0
+loop do |xx|
+	break if xx == 13
+	puts xx
+	xx += 1
+end
