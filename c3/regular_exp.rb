@@ -24,3 +24,11 @@ puts x.sub(/^.../,'Hello') # dots represent the chars, so:
 puts x.sub(/^../,'Hello')
 
 puts x.sub(/..$/,'Hello') # last two chars
+
+# writing a function ??
+
+def replace_aa(some_str)
+	puts some_str.gsub('i', 'apple')
+end
+
+# to run: require './regular_exp.rb' in irb
