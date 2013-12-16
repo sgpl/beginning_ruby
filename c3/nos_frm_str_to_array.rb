@@ -11,3 +11,18 @@ this program uses the scan method on string to
 scan for numbers. numbers found are pushed into an existing array. 
 using the each method, the numbers are then displayed. 
 =end
+
+
+# scanning for vowels in a string: 
+
+_vowels = []
+counter = 0 
+some_txt.scan(/[aeiou]/) do |vwl| 
+	_vowels.push(vwl)
+	counter += 1
+end
+
+puts "The sentence \n #{some_txt} \n has #{counter} vowels. \n Here they are displayed as an array: \n #{_vowels}"
+puts " "
+
+_vowels.each {|nn| print nn; sleep 0.25}
