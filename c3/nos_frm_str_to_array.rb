@@ -22,6 +22,9 @@ some_txt.scan(/[aeiou]/) do |vwl|
 	counter += 1
 end
 
+# can also scan [a-m] # => a to m lowercase
+
+
 puts "The sentence \n #{some_txt} \n has #{counter} vowels. \n Here they are displayed as an array: \n #{_vowels}"
 puts " "
 
