@@ -8,6 +8,9 @@ x << "Fish"
 x.push("Word")
 
 puts x
+puts
+print x
+puts "\n \n  "
 
 # traditionally arrays => LIFO: LAST IN FIRST OUT
 
@@ -17,7 +20,10 @@ x << "Fun"
 
 while x.length > 0 
 	puts x.pop()
+	break if x.length == 2
 end
+
+puts " "
 
 # while x.size > 0 
 # 	puts x.pop()

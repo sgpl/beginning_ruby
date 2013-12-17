@@ -28,4 +28,4 @@ end
 puts "The sentence \n #{some_txt} \n has #{counter} vowels. \n Here they are displayed as an array: \n #{_vowels}"
 puts " "
 
-_vowels.each {|nn| print nn; sleep 0.25}
+_vowels.each {|nn| print nn; sleep 0.25}; puts 
