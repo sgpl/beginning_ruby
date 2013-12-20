@@ -16,9 +16,11 @@ text.scan(/\.|\?|!/) { |match| sentence_count += 1}
 # need to escape . and ? with \ to avoid errors as . is anychar in regular exp.
 # initially i had just used \. and forgotten the \? or !
 # also book uses text.split(/\.|\?|!/).length which is shorter i guess.
+# puts "Test code! It works. Does it? Yes.".split(/\.|\?|!/).length 
+
 word_count = 0 
 text.scan(/\w+/) {|match| word_count += 1}
-
+act_word_count = text.split.length
 
 
 puts "#{line_count}  Lines"
@@ -27,7 +29,10 @@ puts "#{char_nospace} Characters (excluding spaces)"
 puts "#{word_count} Words"
 puts "#{sentence_count} Sentences"
 puts "#{text.split.length} Actual Word Count"
-
+paragraph_count = text.split(/\n\n/).length
+puts "#{paragraph_count} Paragraphs"
+puts "#{act_word_count/sentence_count} Words per Sentence"
+puts "#{sentence_count/paragraph_count} Sentences per Paragraph"
 
 =begin
 
