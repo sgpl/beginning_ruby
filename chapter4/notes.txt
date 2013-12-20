@@ -1,0 +1,24 @@
+# (making a)text analyzer:
+
+# features:
+	- character count
+	- character count (excluding spaces)
+	- line count
+	- word count
+	- sentence count
+	- paragraph count
+	- avg. words per sentence
+	- avg. sentences per paragraph
+
+# outlining basic steps:
+
+	1. load file containing text that we want analyzed
+	2. keep count of how many lines there were, as the file is loading
+	3. put text in string to measure its length and get character count. 
+	4. temporarily remove whitespace and measure the length of resulting string to get char count (excluding spaces). 
+	5. split out white spaces to find out how many words there are
+	6. split out full stops to find out how many sentences there are
+	7. split on double newlines to find out how many paragraphs there are.
+	8. perform calculations to work out the averages. 
+
+	
