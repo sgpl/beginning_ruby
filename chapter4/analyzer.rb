@@ -34,6 +34,9 @@ puts "#{paragraph_count} Paragraphs"
 puts "#{act_word_count/sentence_count} Words per Sentence"
 puts "#{sentence_count/paragraph_count} Sentences per Paragraph"
 
+# array of stop_words
+stop_words = %w{the a by on for of are with just but and to the my I has some in}
+
 =begin
 
 # v0.0 this passes each line to the code block and put each line on the screen. 
