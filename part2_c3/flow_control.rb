@@ -65,3 +65,31 @@ end
 i = 1
 i = i*2 until i >1000
 puts i # puts the last value as opposed to all the values
+
+
+## CODEBLOCKS ::>
+#-----------
+
+
+def each_vowel(&code_block)
+	%w{a e i o m u}.each {|vowel| code_block.call(vowel) }
+end
+
+each_vowel {|vowel| puts vowel}
+	
+
+# ----------- yield method: 
+
+def each_vowel2
+	%w{a e i o u}.each { |vowel| yield vowel }
+end
+
+each_vowel2 { |vowel| puts vowel }
+
+# also possible to store code blocks within variables using lambda:
+
+print_parameter_to_screen = lambda { |x| puts x }
+print_parameter_to_screen.call(100)
+
+# lambda, codeblocks and procs are the same thing?
+
