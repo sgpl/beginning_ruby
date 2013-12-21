@@ -29,6 +29,7 @@ puts "#{char_nospace} Characters (excluding spaces)"
 puts "#{word_count} Words"
 puts "#{sentence_count} Sentences"
 puts "#{text.split.length} Actual Word Count"
+
 paragraph_count = text.split(/\n\n/).length
 puts "#{paragraph_count} Paragraphs"
 puts "#{act_word_count/sentence_count} Words per Sentence"
@@ -36,6 +37,11 @@ puts "#{sentence_count/paragraph_count} Sentences per Paragraph"
 
 # array of stop_words
 stop_words = %w{the a by on for of are with just but and to the my I has some in}
+total_words = text.scan(/\w+/)
+interesting_words = total_words.select { |word| !stop_words.include?(word) }
+
+puts "#{interesting_words.length} Interesting Words"
+puts "#{(interesting_words.length.to_f / act_word_count) * 100} % Interesting Words Percentage"
 
 =begin
 
