@@ -1,0 +1,26 @@
+- developed in 1993
+- object oriented
+- in japan by matz
+
+- alpha: initial release not for general use
+- beta: not entirely tested, or stable
+- forking: taking existing code and splitting it into my own version
+
+Note: 
+You can subscribe to ruby-talk yourself by sending an e-mail containing “subscribe” followed by your first and last name to ruby-talk-ctl@ruby-lang.org.
+
+# mailing lists: 
+ruby-talk 
+ruby-core
+ruby-doc
+
+# irc: [irc.freenode.net]
+	#ruby-lang
+	#rubyonrails
+
+^^ limechat.net/mac for irc: written in ruby (ruby powered GUI app)
+
+# documentation:
+	ruby-code.org/core
+	rubybrain.com
+	
