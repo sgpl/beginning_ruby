@@ -45,24 +45,49 @@ end
 =end
 
 
-class Square
-	def self.hello
-		puts "hello from the class square."
-	end
+# class Square
+# 	def self.hello
+# 		puts "hello from the class square."
+# 	end
 
-	def Square.hello2
-		puts "hello from the class square"
-	end
+# 	def Square.hello2
+# 		puts "hello from the class square"
+# 	end
 
-	def method_name1
-		puts "hello from the instance of Square."
-	end
-end
+# 	def method_name1
+# 		puts "hello from the instance of Square."
+# 	end
+# end
 
-Square.hello
-Square.hello2
-Square.method_name1 # doesn't work. 
+# Square.hello
+# Square.hello2
+# Square.method_name1 # doesn't work. 
 
-Square.new.hello
-Square.new.hello2
-Square.new.method_name1
+# Square.new.hello
+# Square.new.hello2
+# Square.new.method_name1
+
+#----------
+
+# class Square
+  	
+#   	def initialize
+# 	    if defined?(@@number_of_squares)
+# 	      @@number_of_squares += 1
+# 	    else
+# 	      @@number_of_squares = 1
+# 		end 
+# 	end
+
+# 	def Square.count
+# 	    @@number_of_squares
+# 	end 
+# end
+
+# a = Square.new
+# puts Square.count
+# b = Square.new
+# puts Square.count
+# c = Square.new
+# puts Square.count
+
