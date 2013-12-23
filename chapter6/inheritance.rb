@@ -26,30 +26,32 @@
 # my_object.method2
 
 
-class Person
+# class Person
   
-  def initialize(name)
-    @name = name
-  end
+#   def initialize(name)
+#     @name = name
+#   end
   
-  def name
-    return @name
-  end 
+#   def name
+#     return @name
+#   end 
 
-  def greet
-  	return "Nice to meet you. I'm #{@name} How are you?"
-  end
-  
-end
+#   def greet
+#   	return "Nice to meet you. I'm #{@name} How are you?"
+#   end
 
-class Doctor < Person
-  def name
-    "Dr. " + super
-  end
-end
+# end
 
-doc1 = Doctor.new("adam")
-puts doc1.name
+# class Doctor < Person
+#   def name
+#     "Dr. " + super
+#   end
+# end
+
+# doc1 = Doctor.new("adam")
+# puts doc1.name
 
 # this helps if we change name from a single name to firstname + lastname
 # won't need to make the changes in the doctor class. 
+
+
