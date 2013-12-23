@@ -35,6 +35,11 @@ class Person
   def name
     return @name
   end 
+
+  def greet
+  	return "Nice to meet you. I'm #{@name} How are you?"
+  end
+  
 end
 
 class Doctor < Person
@@ -42,6 +47,9 @@ class Doctor < Person
     "Dr. " + super
   end
 end
+
+doc1 = Doctor.new("adam")
+puts doc1.name
 
 # this helps if we change name from a single name to firstname + lastname
 # won't need to make the changes in the doctor class. 
