@@ -42,3 +42,6 @@ class Doctor < Person
     "Dr. " + super
   end
 end
+
+# this helps if we change name from a single name to firstname + lastname
+# won't need to make the changes in the doctor class. 
