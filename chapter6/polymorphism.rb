@@ -31,3 +31,9 @@ end
 animals = [Cat.new("Tommy"), Dog.new("Snowy"), Cat.new("MAX")]
 
 animals.each {|animal| puts animal.talk}
+
+# apparently my results are different, so perhaps this isn't meant to work in ruby 1.9: 
+puts 1000.to_s
+puts [1,2,3].to_s
+puts ({ :name => 'Fred', :age => 10 }).to_s
+
