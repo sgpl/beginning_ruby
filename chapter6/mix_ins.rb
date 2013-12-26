@@ -14,3 +14,19 @@ end
 
 x = Person.new
 puts x.class_name
+
+
+# --------
+# modules are org tools. are like classes but different. 
+
+module AnotherModule
+  def do_stuff
+    puts "This is a test"
+  end
+end
+
+include AnotherModule
+do_stuff
+
+# also 
+AnotherModule.do_stuff
