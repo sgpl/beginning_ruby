@@ -56,7 +56,8 @@ class Dungeon
 		end
 
 		def full_description
-			@name + "\n\nYou are in " + @description
+			@name + "\nYou are in " + @description
+			# print "Where do you want to go next? "; input = gets.chomp.to_sym
 		end
 	end
 end
@@ -76,10 +77,11 @@ my_dungeon.add_room(:smallcave, "Small Cave", "a small cavernous cave", {:east =
 
 
 # start dungeon
-my_dungeon.start(:largecave)
+print "Where do you want to start from?"; input = gets.chomp.to_sym
+my_dungeon.start(input)
 
 #
-my_dungeon.go(:west)
+# my_dungeon.go(:west)
 
 
 
