@@ -1,0 +1,5 @@
+# ruby comes with more than 100 std libraries. 
+
+# eg: net/http lib
+
+skipping pg. 166 to 167 for lack of a wireless connection
