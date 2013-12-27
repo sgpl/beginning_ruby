@@ -14,12 +14,26 @@ end
 puts longest_word
 
 
-num_array = %w{23, 4, 45, 12, 452, 563, 123, 435, 577, 2321, 5363}
+num_array = %w{ 23 4 45 12 452 563 123 435 577 2321 5363 }
 _number = 0 
 num_array.each do |num|
 	num = num.to_i
 	_number = num if num > _number
-	sleep 1.0
+	sleep 0.10
 	puts "current highest number is #{_number}"
 end
 
+class WhyNotThis
+	@@num_array2 = %w{ 23 4 45 12 452 563 123 435 577 2321 5363 }
+	include Enumerable
+
+	def WhyNotThis.some_method22
+		puts @@num_array2.min
+		puts @@num_array2.max
+		p @@num_array2.sort
+	end
+end
+
+WhyNotThis.some_method22
+
+# sort, min, max not working as they should. 
