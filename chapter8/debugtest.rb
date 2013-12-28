@@ -6,3 +6,16 @@ until i > 1000000
 end
 
 puts "i = #{i}, j = #{j}"
+
+
+# run by typing 'ruby -r debug debugtest.rb'
+
+# common commands: 
+# list
+# step 
+# cont
+# watch 
+# break 
+# quit
+
+# gonna focus on test driven development and unit testing next.
