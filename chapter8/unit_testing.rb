@@ -18,3 +18,7 @@ class TestTitleize < Test::Unit::TestCase
 		assert_equal("Let's make a test fail!", "foo".titleize)
 	end
 end
+
+# assert_equal asserts that the first adn second argument are equal. 
+
+# refer to pg: 195 for examples of this
