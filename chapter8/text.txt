@@ -1,0 +1,23 @@
+ch8 
+
+- error handling, 
+- debugging, 
+- testing, 
+
+- commenting to generate documentation using rdoc
+#== heading
+#* Bulleted List first item
+#  * inner list
+# *for bold* or _for italics_
+# +code goes here+
+
+def some_method #:nodoc:
+
+or 
+
+class SomeClass #:nodoc: all
+
+#-- stop processing for rdoc following this
+
+#++ start processing for rdoc following this
+
