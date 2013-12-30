@@ -29,3 +29,7 @@ data = File.read(filename)
 
 # can also do this:
 array_of_lines = File.readlines(filename)
+
+
+# file.pos 	=> gives position of pointer in the file... refer gp 210
+# can also assign a position, so file.pos = 10; puts file.pos OR gets file.pos
