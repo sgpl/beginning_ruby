@@ -26,3 +26,6 @@ puts File.open("dummy_data.txt").readlines.join("--")
 #this: data = File.open(filename).read, 
 # can be written as this:
 data = File.read(filename)
+
+# can also do this:
+array_of_lines = File.readlines(filename)
