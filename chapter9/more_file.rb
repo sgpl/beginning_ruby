@@ -7,3 +7,16 @@ File.open("dummy_data.txt").each do |line|
 	
 end
 
+File.open("dummy_data.txt").each('a') {|line| puts line}
+
+# File.open("dummy_data.txt").each_byte {|byte| puts byte}
+
+File.open("dummy_data.txt").each_char {|byte| puts byte}
+
+
+File.open("dummy_data.txt") do |file| 
+	2.times { puts file.gets}
+end
+
+
+puts File.open("dummy_data.txt").readlines.join("--")
