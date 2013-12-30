@@ -20,3 +20,9 @@ end
 
 
 puts File.open("dummy_data.txt").readlines.join("--")
+
+
+# also for stuff like:
+#this: data = File.open(filename).read, 
+# can be written as this:
+data = File.read(filename)
