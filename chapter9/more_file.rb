@@ -21,7 +21,7 @@ end
 
 puts File.open("dummy_data.txt").readlines.join("--")
 
-
+=begin
 # also for stuff like:
 #this: data = File.open(filename).read, 
 # can be written as this:
@@ -33,3 +33,5 @@ array_of_lines = File.readlines(filename)
 
 # file.pos 	=> gives position of pointer in the file... refer gp 210
 # can also assign a position, so file.pos = 10; puts file.pos OR gets file.pos
+
+=end
