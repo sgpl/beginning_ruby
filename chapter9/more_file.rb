@@ -7,7 +7,7 @@ File.open("dummy_data.txt").each do |line|
 	
 end
 
-File.open("dummy_data.txt").each('a') {|line| puts line}
+File.open("dummy_data.txt").each('a') {|line| puts line} # splits on the char "a"
 
 # File.open("dummy_data.txt").each_byte {|byte| puts byte}
 

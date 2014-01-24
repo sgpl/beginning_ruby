@@ -6,7 +6,7 @@ file objects that can be accessed from a Ruby program
 
 # opening and reading
 
-# File.open("nameOfFile.txt").each {|line| puts line
+# File.open("nameOfFile.txt").each {|line| puts line }
 
 # File.new("text.txt", "r").each { |line| puts line }
 
@@ -22,9 +22,13 @@ File.open("sample.txt") do |f|
 	puts f.gets
 end
 
+sleep 2
+
 f2 = File.new("sample.txt", "r")
 puts f2.gets
 f2.close
+
+sleep 2
 
 class MyFile
 	attr_reader :handle
@@ -38,6 +42,8 @@ class MyFile
 	end
 
 end
+
+sleep 2
 
 f3 = MyFile.new("sample.txt")
 puts f3.handle.gets
