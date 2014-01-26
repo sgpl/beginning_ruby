@@ -1,2 +1,3 @@
-{:people[o:Person:
-@nameI"Fred Boggs:ET:	@agei2:@genderI"	Male;To;;I"Laura Boggler;T;	i
+{:people[	o:Person:
+@nameI"Fred Boggs:ET:	@agei2:@genderI"	Male;To;;I"Laura Boggler;T;	io;;I"Fred Boggs;T;	i2;
+I"	Male;To;;I"Laura Boggler;T;	i

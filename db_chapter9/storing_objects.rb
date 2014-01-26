@@ -23,7 +23,7 @@ laura.name = "Laura Boggler"
 laura.age = 25
 
 
-require 'PStore'
+require 'pstore'
 # creating a new PStore in a file called storagefile
 # then we start a transaction**
 # ** data within a PStore file can only 
@@ -56,16 +56,16 @@ people.each do |person|
 end
 =end
 
-# require 'PStore'
-# store = PStore.new("storagefile")
-# people = []
-# store.transaction do
-# 	people = store[:people]
-# end
+require 'pstore'
+store = PStore.new("storagefile")
+people = []
+store.transaction do
+	people = store[:people]
+end
 
-# # after this we can treat Person objects inside people as
-# # local objects so :
+# after this we can treat Person objects inside people as
+# local objects so :
 
-# people.each do |person|
-# 	puts person.name
-# end
+people.each do |person|
+	puts person.name
+end
