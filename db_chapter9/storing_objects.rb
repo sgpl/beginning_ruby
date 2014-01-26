@@ -1,6 +1,6 @@
 # csv has some limitations: data is "flat"
 
-# Pstore is a core ruby library that allows 
+# PStore is a core ruby library that allows 
 # Ruby objects and data structures to be used as they normally would. 
 # and be stored and later on reloaded back into memory from the disk file. 
 
@@ -23,26 +23,26 @@ laura.name = "Laura Boggler"
 laura.age = 25
 
 
-require 'pstore'
-# creating a new Pstore in a file called storagefile
+require 'PStore'
+# creating a new PStore in a file called storagefile
 # then we start a transaction**
-# ** data within a Pstore file can only 
+# ** data within a PStore file can only 
 # be read or updates while inside a "transaction."
 # to prevent data corruption. 
 ## refer to the book for a more detailed exp: pg: 225
 
-store = Pstore.new("storagefile")
+store = PStore.new("storagefile")
 store.transaction do	
-	store[:people] || = Array.new
+	store[:people] ||= Array.new
 	store[:people] << fred 
 	store[:people] << laura 
 end
 
 =begin 
-later we can retrieve data from the Pstore database
+later we can retrieve data from the PStore database
 so: 
-require 'pstore'
-store = Pstore.new("storagefile")
+require 'PStore'
+store = PStore.new("storagefile")
 people = []
 store.transaction do
 	people = store[:people]
@@ -56,8 +56,8 @@ people.each do |person|
 end
 =end
 
-# require 'pstore'
-# store = Pstore.new("storagefile")
+# require 'PStore'
+# store = PStore.new("storagefile")
 # people = []
 # store.transaction do
 # 	people = store[:people]
