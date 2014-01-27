@@ -43,7 +43,7 @@ yaml_string = <<END_OF_DATA
   name: Jessica Smith
 END_OF_DATA
 
-test_data2 = YAML::load(yaml_string)
+test_data2 = YAML::load(yaml_string) # YAML::load converts YAML data back to test_array of Person objects.
 puts test_data2[0].name
 puts test_data2[0].age
 puts test_data2[1].name
