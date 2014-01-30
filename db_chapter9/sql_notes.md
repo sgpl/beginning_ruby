@@ -52,3 +52,5 @@ SELECT * FROM people WHERE name = "Chris";
 UPDATE people SET name = "Christopher" WHERE name = "Chris";
 UPDATE people SET name = "Christopher", age = 44 WHERE name = "Chris";
 UPDATE people SET name = "Christopher" WHERE name = "Chris" AND age = 25;
+UPDATE people SET name = "Christopher";
+
