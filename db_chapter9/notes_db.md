@@ -59,4 +59,4 @@ ID		NAME 		JOB 	AGE 	GENDER
 ## AcriveRecord: brief summary 
 
 - product of RoR framework
-- abstracts away all the details of SQL and database design and makes it possible to relate items within database in an OO fashion, like with PStore
+- abstracts away all the details of SQL and database design and makes it possible to relate items within database in an OO fashion, like with PStore 
