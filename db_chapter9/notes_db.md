@@ -54,3 +54,9 @@ ID		NAME 		JOB 	AGE 	GENDER
 - considered somewhat obselete, however it is good to know. 
 - available as a ruby gem called 'dbi'
 - refer to dbi_db.rb
+
+
+## AcriveRecord: brief summary 
+
+- product of RoR framework
+- abstracts away all the details of SQL and database design and makes it possible to relate items within database in an OO fashion, like with PStore
