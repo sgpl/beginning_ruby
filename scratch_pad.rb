@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 require 'profile'
 class Calculator
         def self.count_to_large_number
