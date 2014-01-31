@@ -21,3 +21,7 @@
 
 - ARGV: is an array automatically created by the Ruby interpreter that contains parameters passed to the Ruby program (whether on the command line or by other means. )
 - refer to >> argv_ex.rb
+- command line arguments can be used to pass: options, settings and data fragments that might change bw the execution of the argument. 
+
+from_filename = ARGV[0]
+destination_filename = ARGV[1]
