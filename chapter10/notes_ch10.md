@@ -58,3 +58,26 @@ destination_filename = ARGV[1]
 
 #### then we create a specification file
 - once that is done, we can do "gem build <spec file>"
+
+
+#### easier gem creation
+
+- **gem install newgem** (a tool that makes creating structure and default files for generating a gem, a one step process)
+	- once installed, we can do something like "newgem name_of_library_for_gem"
+
+
+#### distributing a gem: 
+
+- refer to book. pg 260
+- rubyforge is the most popular hosting soln. for gems
+- also github can satisfy the same criteria for hosting ruby gems
+
+#### stuff on cgi scripts
+
+- pg- 261 to 264
+
+### generic http servers
+
+- we'll cover WEBrick and Mongrel
+- 
+
