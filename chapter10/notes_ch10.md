@@ -57,3 +57,4 @@ destination_filename = ARGV[1]
 	
 
 #### then we create a specification file
+- once that is done, we can do "gem build <spec file>"
