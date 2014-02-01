@@ -43,6 +43,17 @@ destination_filename = ARGV[1]
 	
 
 
-1. structuring files: 
-	- collect all the files you want to make up the gem. 
-	- 
+#### structuring files: 
+
+- collect all the files you want to make up the gem. 
+- it is necessary to create a folder to contain all the gem's folders, so create a folder, eg:  gemname_folder (which will contain the following sub folders)
+	- lib: this directory will contain ruby code related to the library
+	- pkg: this is a temporary directory where the gem will be generated
+	- test: this directory will contain any unit tests or other testing scripts related to the library
+	- doc: this is an optional directory taht could contain documentation about the library, particularly documentation created with or by rdoc
+	- bin: this is another optional directory that can contain system tools and command-line scripts that are related to the library. 
+
+- At a minimum we should have: 'lib','pkg','test'
+	
+
+#### then we create a specification file
