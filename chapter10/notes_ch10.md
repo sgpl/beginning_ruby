@@ -23,5 +23,26 @@
 - refer to >> argv_ex.rb
 - command line arguments can be used to pass: options, settings and data fragments that might change bw the execution of the argument. 
 
+EG: script.rb arg1 arg2
+
 from_filename = ARGV[0]
+
 destination_filename = ARGV[1]
+
+
+## distributing/releasing ruby libraries as gems
+
+#### creating a gem
+
+##### raw approach: from the ground up
+
+- building a gem requires three steps: 
+	1. organize code and other files into a structure that can be turned into a gem 
+	2. create a specification file that lists information aobut the gem 
+	3. use the gem program to build the gem from the source files and specifications
+	
+
+
+1. structuring files: 
+	- collect all the files you want to make up the gem. 
+	- 
