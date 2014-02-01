@@ -79,5 +79,45 @@ destination_filename = ARGV[1]
 ### generic http servers
 
 - we'll cover WEBrick and Mongrel
-- 
+- refer to notes ~pg 265 for more details on WEBrick
+
+- for Mongrel, we need to "gem install mongrel"
+- TODO ; pg- 267 to 268
+
+## Remote Procedure Calls
+
+- RPCs are common way to make program functionality available to remote programs. 
+- Ruby has built-in support for XML-RPC and SOAP, as well as DRb
+
+#### XML-RPC
+
+- uses XML for its messaging and HTTP  for its transport. 
+- can create multiple programs in different languages but still talk bw them in a way that every language understands. 
+
+
+Calling a XML-RPC Enabled method
+
+----------------------------------------
+require 'xmlrpc/client'
+
+server = XMLRPC::Client.new2("http://www.rubyinside.com/book/xmlrpctest.cgi")
+puts server.call("sample.sumAndDifference", 5, 3).inspect
+----------------------------------------
+
+- just read through/skipped pgs 269 to 272
+
+## summary
+
+- shebang line -> determines which interpreter is used to process file
+- RUBY_PLATFORM -> variable that contains name of current platform
+- Environment Variables -> special variabels set by the operating system or other processes that contain information relevant to the current execution environment and information about the os.
+- rubyforge / github -> self explainatory
+- CGI: common gateway interface -> standard that enables web servers to execute scripts and provide an interface bw web users and scripts located on the server. 
+- WEBrick -> simple and easy HTTP server lib for Ruby that comes standard with Ruby
+- Mongrel -> more powerful HTTP server library for Ruby by Zed Shaw that improves upon WEBrick's speed, stability and performance. 
+- RPC -> remote procedure call: a way to call methods in a different program using a network (either local or the internet) , a transport protocol (such as HTTP) and a messaging protocol (such as XML)
+- XML-RPC -> RPC protocl that uses HTTP and XML.  for transport and messaging. 
+- SOAP (simple object access protocol) -> RPC protocol that uses HTTP and XML for transport and messaging
+- DRb -> distributed ruby : ruby only mechanism for implementing RPCs and object hahdling bw separate Ruby scripts. 
+
 
