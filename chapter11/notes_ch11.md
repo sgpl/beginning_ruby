@@ -20,6 +20,26 @@ puts eval(my_code)
 - It’s possible to pass a binding to eval and to have eval execute the supplied code under
 that binding rather than the current one.
 
+eg:
 ----------------------------------------
+def binding_elsewhere
+	x = 20 
+	return binding
+end
+
+remote_binding = binding_elsewhere
+
+x = 10 
+eval("puts x") # => 10 
+eval("puts x", remote_binding) # => 20
+
+# eval accepts an optional second parameter, a binding. 
+
+# extending the previous code:
+
+eval("x = 10")
+eval("x = 50", remote_binding)
+eval("puts x") # => 10
+eval("puts x", remote_binding) # => 50
 
 ----------------------------------------
