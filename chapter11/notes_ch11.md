@@ -43,3 +43,9 @@ eval("puts x") # => 10
 eval("puts x", remote_binding) # => 50
 
 ----------------------------------------
+
+# other forms of eval
+
+- although eval executes code within the current context, class_eval, module_eval and instance_eval can evaluate code within context of classes, modules and object instances. 
+
+- class_eval is ideal for adding methods to class dynamically (see: class_eval_eg.rb)
