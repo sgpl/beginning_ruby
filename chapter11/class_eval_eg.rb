@@ -43,3 +43,12 @@ Person.add_accessor :gender
 person.name = "James Bond"
 person.gender = "Superman"
 puts "#{person.name} is #{person.gender}"
+
+### we can also do something like this: 
+
+class NewClassForKicks
+	add_accessor :somenewthing
+end
+
+# because add_accessor is being used within a class, the method call
+# will work its way up to where we've defined add_accessor in the Class class. 

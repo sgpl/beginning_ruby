@@ -1,4 +1,6 @@
 # advanced ruby features: 
+####[note]: skipping chapter for now // see bottom and update this when i finish the chapter. 
+
 
 ## dynamic code execution 
 ----------------------------------------
@@ -49,3 +51,5 @@ eval("puts x", remote_binding) # => 50
 - although eval executes code within the current context, class_eval, module_eval and instance_eval can evaluate code within context of classes, modules and object instances. 
 
 - class_eval is ideal for adding methods to class dynamically (see: class_eval_eg.rb)
+
+### currently on pg. 278 // skipping the rest of the chapter. will complete later. 
