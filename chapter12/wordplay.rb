@@ -24,6 +24,14 @@ end
 hot_words = %w{ruby test}
 my_string = "This is a test. Dull sentence here. Ruby is great. So is cake."
 my_string.sentences.find_all do |s|
-	s.downcase.words.any? {|word| hot_words.include?(word)}
+	s.downcase.words.any? {|word| p hot_words.include?(word)}
 end
 
+# example of a sentence sorting/ranking function 
+def self.best_sentence(sentences, desired_words)
+	ranked_sentences = sentences.sort_by do |s|
+		s.words.length - (s.downcase.words - desired_words).length
+	end
+
+	ranked_sentences.last
+end
