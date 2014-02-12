@@ -41,7 +41,9 @@ class WordPlay
 			when "i"
 				"you"
 			when "you"
-				"I"
+				"me"
+			when "me"
+				"you"
 			when "i am"
 				"you are"
 			when "you are"
@@ -51,12 +53,16 @@ class WordPlay
 			when "my"
 				"your"
 			end	      
-		end
+		end.sub(/^me\b/i, 'i')
 	end
 end
 
 puts WordPlay.switch_pronouns("You are pretty?")
 puts WordPlay.switch_pronouns("Your cat is fighting with my cat")
 puts WordPlay.switch_pronouns("You are my robot")
+puts WordPlay.switch_pronouns("My cat is fighting with you")
+puts WordPlay.switch_pronouns("You gave me hope")
 
-
+while input = gets
+	puts ">>" + WordPlay.switch_pronouns(input).chomp + "?"
+end
