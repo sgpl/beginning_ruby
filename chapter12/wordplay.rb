@@ -4,7 +4,7 @@ class String
 	end
 
 	def words
-		scan(/\w[\w\'\-]*/)
+		self.scan(/\w[\w\'\-]*/)
 	end
 end
 
