@@ -45,6 +45,7 @@ class Bot
 		input
 	end
 
+	private
 	def best_sentence(input)
 		hot_words = @data[:responses].keys.select do |k|
 			k.class == String && k ~= /^\w+$/
